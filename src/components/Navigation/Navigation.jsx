@@ -7,7 +7,9 @@ const Navigation = (props) => {
   return (
     <React.Fragment>
       <div className="bg-slate flex py-3 px-16 items-center justify-between">
-        <h1 className="text-4xl font-bold   bg-slate text-white">Nig Pres.</h1>
+        <h1 className="text-4xl font-bold   bg-slate text-white">
+          Simple ToDo
+        </h1>
         <ul className="flex text-2xl text-white ">
           {authCtx.isLoggedIn && (
             <li className="px-4 ">
