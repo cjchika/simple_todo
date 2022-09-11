@@ -1,0 +1,26 @@
+.todo {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 45rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+}
+
+.todo label {
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.todo input {
+    width: 32rem;
+    border: 1px solid #22c55e;
+    padding: 0.45rem;
+
+}
+
+.todo input:focus {
+    outline: none;
+    border: 1px solid #22c55e;
+}

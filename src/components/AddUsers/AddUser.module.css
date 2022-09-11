@@ -1,0 +1,28 @@
+.adduser {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 45rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+}
+
+.adduser label {
+    display: block;
+    font-weight: bold;
+}
+
+.adduser input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.15rem;
+    margin-bottom: 2rem;
+}
+
+.adduser input:focus {
+    outline: none;
+    border-bottom: 1.8px solid #22c55e;
+}

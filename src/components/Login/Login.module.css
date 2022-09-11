@@ -1,0 +1,45 @@
+.login {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 25rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 12px;
+    margin-top: 7rem;
+}
+
+.login label {
+    display: block;
+    font-weight: bold;
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.15rem;
+    margin-bottom: 2rem;
+}
+
+.login input:focus {
+    outline: none;
+    border-bottom: 1.8px solid #22c55e;
+    background: #eff7f1;
+}
+
+.login.invalid input {
+    border-bottom: 1.8px solid red;
+    background: #fbdada;
+}
+
+/* button:disabled,
+button:focus:disabled,
+button:hover:disabled,
+button:active:disabled {
+    background: #ccc;
+    border-color: #ccc;
+    color: #666666;
+    cursor: not-allowed;
+} */

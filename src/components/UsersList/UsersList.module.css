@@ -1,0 +1,14 @@
+.list ul {
+    margin: 1.2rem auto;
+    width: 90%;
+    max-width: 45rem;
+}
+
+.list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1E293B;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 16px;
+}

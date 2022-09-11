@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+//import AddUser from "./components/AddUsers/AddUser";
+import Login from "./components/Login/Login";
+import Navigation from "./components/Navigation/Navigation";
+//import UsersList from "./components/UsersList/UsersList";
+import AuthContext from "./store/auth-ctx";
+import ToDoForm from "./components/ToDo/ToDoForm";
 
 function App() {
+  const authCtx = useContext(AuthContext);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navigation />
+      <main>
+        {!authCtx.isLoggedIn && <Login />}
+        {/* {authCtx.isLoggedIn && <AddUser />}
+        {authCtx.isLoggedIn && <UsersList />} */}
+        {authCtx.isLoggedIn && <ToDoForm />}
+      </main>
+    </React.Fragment>
   );
 }
 
